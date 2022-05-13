@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="config\experiments-descriptions\binary-11-multiplexer.txt" />
+    <None Remove="config\experiments-descriptions\binary-6-multiplexer.txt" />
+    <None Remove="config\experiments-descriptions\cartpole-doublepole.txt" />
+    <None Remove="config\experiments-descriptions\cartpole-singlepole.txt" />
+    <None Remove="config\experiments-descriptions\generative-sinewave.txt" />
+    <None Remove="config\experiments-descriptions\prey-capture.txt" />
+    <None Remove="config\experiments-descriptions\xor.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="config\experiments-descriptions\binary-11-multiplexer.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\binary-6-multiplexer.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\cartpole-doublepole.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\cartpole-singlepole.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\generative-sinewave.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\prey-capture.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="config\experiments-descriptions\xor.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dawn.Guard" Version="1.12.0" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Redzen" Version="13.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Experiments\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SharpNeat">
+      <HintPath>Lib\SharpNeat.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpNeat.Tasks">
+      <HintPath>Lib\SharpNeat.Tasks.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
