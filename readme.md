@@ -12,4 +12,14 @@ Run in terminal:
 
 `npm start`
 
-Open browser on address `http://localhost:3000/`
+Open browser on address http://localhost:3000/
+
+---
+
+## Dependencies
+For backend to work, you need 
+* SharpNeat.dll
+* SharpNeat.Tasks.dll
+
+You can build them from source from SharpNeat repository:
+https://github.com/colgreen/sharpneat-refactor
