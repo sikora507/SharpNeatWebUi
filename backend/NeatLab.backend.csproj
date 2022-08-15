@@ -54,10 +54,10 @@
 
   <ItemGroup>
     <Reference Include="SharpNeat">
-      <HintPath>Lib\SharpNeat.dll</HintPath>
+      <HintPath>..\..\sharpneat-refactor\src\SharpNeat\bin\Release\net6.0\SharpNeat.dll</HintPath>
     </Reference>
     <Reference Include="SharpNeat.Tasks">
-      <HintPath>Lib\SharpNeat.Tasks.dll</HintPath>
+      <HintPath>..\..\sharpneat-refactor\src\SharpNeat.Tasks\bin\Release\net6.0\SharpNeat.Tasks.dll</HintPath>
     </Reference>
   </ItemGroup>
 
